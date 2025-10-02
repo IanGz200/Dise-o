@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario HTML5</title>
+    <style>
+        fieldset *{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="">
+        <fieldset style="display: flex; flex-direction: column; align-items: start;">
+            <legend>Formulario HTML5</legend>
+            <label for="selector">Género</label>
+            <select name="selector" id="selector">
+                <option value="h">Hombre</option>
+                <option value="m">Mujer</option>
+                <option value="nb">NB</option>
+            </select>
+            <label for="presentacion">Presentación</label>
+            <textarea name="presentacion" id="presentacion" rows="1"></textarea>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+            <input type="button" value="Boton">
+            <p>
+                <label for="casado">Casado</label><input type="checkbox" name="casado" id="casado">
+                <label for="soltero">Soltero</label><input type="checkbox" name="soltero" id="soltero">
+            </p>
+            <p>
+                <label for="cocheS">Si</label><input type="radio" name="si" id="cocheS">
+                <label for="cocheN">No</label><input type="radio" name="no" id="cocheN">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>

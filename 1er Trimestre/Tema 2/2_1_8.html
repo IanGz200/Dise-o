@@ -20,18 +20,30 @@
                 <option value="nb">NB</option>
             </select>
             <label for="presentacion">Presentación</label>
-            <textarea name="presentacion" id="presentacion" rows="1"></textarea>
+            <textarea name="presentacion" id="presentacion" rows="1" autofocus></textarea>
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre">
-            <input type="button" value="Boton">
-            <p>
+            <input type="button" value="Boton" disabled>
+            <p id="situacion">
                 <label for="casado">Casado</label><input type="checkbox" name="casado" id="casado">
-                <label for="soltero">Soltero</label><input type="checkbox" name="soltero" id="soltero">
+                <label for="empleado">Empleado</label><input type="checkbox" name="empleado" id="empleado">
             </p>
+            <p id="coche">
+                <label for="cocheS">Con coche</label><input type="radio" name="coche" id="cocheS">
+                <label for="cocheN">Sin coche</label><input type="radio" name="coche" id="cocheN" checked>
+            </p>
+            <input type="file" name="archivo" id="archivo">
             <p>
-                <label for="cocheS">Si</label><input type="radio" name="si" id="cocheS">
-                <label for="cocheN">No</label><input type="radio" name="no" id="cocheN">
+                <label for="lista">Opciones</label>
+                <input list="opciones" name="opciones" id="lista">
+                <datalist id="opciones">
+                    <option value="opcion1"></option>
+                    <option value="opcion2"></option>
+                    <option value="opcion3"></option>
+                    <option value="opcion4"></option>
+                </datalist>
             </p>
+            <input type="submit" value="Enviar" id="enviar">
         </fieldset>
     </form>
 </body>

@@ -1,0 +1,11 @@
+@media all {
+    p{
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
+@media only screen{
+    img{
+        text-align: center;
+    }
+}

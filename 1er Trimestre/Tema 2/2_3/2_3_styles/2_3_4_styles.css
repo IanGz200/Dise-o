@@ -1,0 +1,21 @@
+p[lang]{
+    color:red;
+}
+p[id="presentacion"]{
+    color:lightcoral;
+}
+p[id~="texto"]{
+    color:aqua;
+}
+p[lang|="es"]{
+    color:blue;
+}
+p[id$="lo"]{
+    color:brown;
+}
+p[id^="f"]{
+    color:darkolivegreen;
+}
+p[id*="2"]{
+    color:blueviolet;
+}

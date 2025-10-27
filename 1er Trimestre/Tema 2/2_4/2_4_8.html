@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8</title>
+    <style>
+        .rectangulo {
+            min-height: 100px;
+        }
+        .cuadrado {
+            height: 200px;
+            width: 200px;
+        }
+        .grad1 {
+            background-image: linear-gradient(45deg, red, yellow, green, blue, purple,white);
+        }
+        .grad2 {
+            background-image: repeating-linear-gradient(to right,red,orange 3%,cyan 5%);
+        }
+        .grad3 {
+            background-image: radial-gradient( farthest-corner at 60% 55%,blue,green 20%,yellow 50%,orange 80%);
+        }
+        .grad4 {
+            background-image: conic-gradient(from 180deg,red, yellow, green, blue,cyan, white);
+            border-radius: 60px;
+        }
+    </style>
+</head>
+<body>
+    <p>Gradiente 1</p>
+    <div class="rectangulo grad1"></div>
+    <p>Gradiente 2</p>
+    <div class="rectangulo grad2"></div>
+    <p>Gradiente 3</p>
+    <div class="cuadrado grad3"></div>
+    <p>Gradiente 4</p>
+    <div class="cuadrado grad4"></div>
+</body>
+</html>

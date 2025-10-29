@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ejercicio 10</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            div{
+                width: fit-content;
+                background-color: lightblue;
+                padding: 5px;
+
+            }
+            .font_timesNewRoman{
+                font-family: "Times New Roman", Times, serif;
+            }
+            .font_helvetica{
+                font-family: Helvetica, sans-serif;
+            }
+            .font_arial{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .negrita{
+                font-weight: bold;
+            }
+            .grande{
+                font-size: x-large;
+            }
+            .cursiva{
+                font-style: italic;
+            }
+            li::marker{
+                color: blue;
+            }
+            li{
+                list-style-position: inside;
+                line-height: 2.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p class="negrita font_timesNewRoman">ACTIVIDAD EN CSS (Times New Roman)</p>
+            <ul>
+                <li class="font_helvetica">Pongamos a prueba las fuentes en CSS(Helvetica)</li>
+                <li class="font_arial">También <span class="grande">el tamaño</span> (Arial)</li>
+                <li class="font_timesNewRoman">Y el <span class="cursiva">estilo</span> (Times New Roman)</li>
+            </ul>
+        </div>
+    </body>
+</html>

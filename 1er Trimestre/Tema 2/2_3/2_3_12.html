@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 12</title>
+        <style>
+            .fli::first-line{
+                font-weight: bold;
+            }
+            .fle::first-letter{
+                text-transform: uppercase;
+                font-size: 50px;
+            }
+            .b::before{
+                content: "Inicio-";
+            }
+            .a::after{
+                content: "-Final";
+            }
+            .m::marker{
+                color:red;
+            }
+            .s::selection{
+                background-color: black ;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="fli">Titulo</h1>
+        <h2 class="s">Subtitulo</h2>
+        <p class="b a fle" >texto para comprobar psudoelementos</p>
+        <ol>
+            <li class="m" >Lista con marcador</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 8</title>
+        <style>
+            a:link{
+                color: blue;
+            }
+            a:visited{
+                color: purple;
+            }
+            a:hover{
+                color: green;
+            }
+            a:active{
+                color: red;
+            }
+            input:focus{
+                background-color:black;
+                color: white;
+            }
+            span:lang(en){
+                color: grey;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+        </ul>
+        <p>El siguinete texto es en inglés: <span lang="en">"Text in english"</span></p>
+        <form action="#">
+            <label for="texto">Texto</label>
+            <input type="text" name="texto" id="texto">
+        </form>
+    </body>
+</html>

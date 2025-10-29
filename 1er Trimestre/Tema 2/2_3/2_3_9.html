@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio 9</title>
+        <style>
+            p:first-child{
+                color: green;
+            }
+            p:last-child{
+                color: red;
+            }
+            span:first-of-type{
+                color: blue;
+            }
+            span:last-of-type{
+                color: yellow;
+            }
+            a:only-child{
+                color: purple;
+            }
+            pre:only-of-type{
+                color: lightcoral;
+            }
+            p:empty::after{
+                content: '-Este texto estaba vacío';
+            }
+            div:nth-child(3){
+                font-size: 50px;
+            }
+            div:nth-last-child(2){
+                font-style: italic;
+            }
+            p:nth-of-type(2){
+                font-weight: bold;
+            }
+            p:nth-last-of-type(1){
+                text-decoration: underline;
+            }
+            :root{
+                background-color: lightgrey;
+            }
+            :not(p){
+                background-color: lightblue;
+            }
+            input:enabled{
+                background-color: black;
+                color: white;
+            }
+            input:disabled{
+                background-color: red;
+                color: yellow;
+            }
+            input:checked{
+                transform: scale(2);
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Párrafo verde por ser primer hijo</p>
+            <p>Párrafo en negrita por ser el segundo p</p>
+            <p><a href="">Enlace único</a></p>
+            <p></p>
+            <pre>Texto preformateado único de su tipo</pre>
+            <span>Span azul por ser el primer span</span>
+            <span>Span amarillo por ser el ultimo span</span>
+            <p>Texto antes del span en italic por ser el penultimo hijo</p>
+            <p>Texto rojo por ser el ultimo hijo del div y subrayao por ser el ultimo de tipo p</p>
+        </div>
+        <form action="" method="get" >
+            <label for="texto">Etiqueta para el imput activado</label>
+            <input type="text" name="texto" id="texto" >
+            <label for="disabled">Etiqueta para disabled</label>
+            <input type="text" name="disabled" id="disabled" disabled>
+            <label for="check">Checkbox</label>
+            <input type="checkbox" name="check" id="check">
+        </form>
+        <div>
+            <p>Párrafo de un div en italic por ser el ultimo hijo de body</p>
+            <p>Tambien tiene font size en 50px por ser tercero</p>
+        </div>
+
+    </body>
+</html>

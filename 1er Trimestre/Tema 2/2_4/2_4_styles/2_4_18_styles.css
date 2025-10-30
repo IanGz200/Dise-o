@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.breadcrumb{
+    padding: 0.5em;
+}
+.left, .right {
+    text-decoration: none;
+    color:  #0095eb;
+    font-weight: bold;
+}
+.left:hover, .right:hover {
+    color:  #006196;
+    text-decoration: underline;
+}
+.left{
+    float: left;
+}
+.left::before{
+    content: "«";
+}
+.right{
+    float: right;
+}
+.right::after{
+    content: "»";
+}

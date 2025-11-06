@@ -31,7 +31,7 @@ nav a{
     color:black;
     text-decoration:none;
     padding:15px;
-    display:block;
+    display:inline-block;
 }
 
 nav a:hover{
@@ -72,6 +72,7 @@ aside h3{
 aside li {
     list-style: none;
     border-bottom: 1px solid #8f8f8f;
+    padding-bottom: 10px;
     margin-bottom: 15px;
 }
 

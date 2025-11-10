@@ -5,6 +5,5 @@
 .content-box{
     width: 100px;
     height: 100px;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow-y: scroll;
 }

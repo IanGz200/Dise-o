@@ -19,7 +19,15 @@ li:last-child{
 
 li a {
     text-decoration: none;
+    text-align: center;
+    display: block;
     color: #333;
     padding: 5px;
     background-color: #E5F3FE;
+}
+li a::before {
+    content: "👉";
+}
+li a:hover {
+    background-color: #c8e2f7;
 }

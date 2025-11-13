@@ -2,3 +2,33 @@
     margin: 0;
     padding: 0;
 }
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://cdn-icons-png.flaticon.com/256/4193/4193347.png");
+    background-size: cover;
+}
+p{
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+.p1{
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+.p2{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: soft-light;
+}
+.p3{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: hue;
+}

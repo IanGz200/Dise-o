@@ -2,3 +2,25 @@
     margin: 0;
     padding: 0;
 }
+div{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto 300px;
+}
+.rotated{
+    background-color: green;
+}
+.rotated:hover{
+    transform: rotate(360deg) scaleX(calc(100%*2));
+    background-color: red;
+    transition:ease-out 1s;
+    transition-delay: 1s;
+}
+.moved{
+    background-color: rgba(10,10,10,0.4);
+}
+.moved:hover{
+    transform: translate(100px,50px) skew(10deg);
+    background-color: pink;
+    transition: ease-in-out 1s;
+}

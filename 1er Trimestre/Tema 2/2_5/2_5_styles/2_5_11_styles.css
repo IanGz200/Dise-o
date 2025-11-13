@@ -2,3 +2,6 @@
     margin: 0;
     padding: 0;
 }
+img{
+    filter: blur(3px) grayscale(0.5) sepia(50%);
+}

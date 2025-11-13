@@ -1,4 +1,30 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+.btn-normal{
+    background: #3498db;
+    color: #fff;
+    cursor: crosshair;
+}
+.btn-outline{
+    border: 2px solid #3498db;
+    background: transparent;
+    color: #3498db;
+    cursor: pointer;
+}
+.btn-alert{
+    background: #e74c3c;
+    color: #fff;
+    cursor: help;
+}
+button:hover {
+    transform: scale(1.1);
 }

@@ -2,3 +2,17 @@
     margin: 0;
     padding: 0;
 }
+div{
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+.fixed-container{
+    width: 300px;
+    background-color: #3498db;
+    float: left;
+}
+.variable-container{
+    width: calc( 100% - 300px);
+    background-color: #e74c3c;
+    float: left;
+}

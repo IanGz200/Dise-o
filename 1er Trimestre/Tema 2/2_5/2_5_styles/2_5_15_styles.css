@@ -1,4 +1,49 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    background-color: #f2f2f2;
+}
+
+.contenedor{
+    background-color: #ccc;
+    width: 80%;
+    margin: auto;
+}
+header {
+    color: white;
+    padding: 20px;
+}
+.main{
+    background-color: white;
+    float: left;
+    width: 70%;
+    padding: 20px;
+}
+.main h1{
+    font-size: 1.3em;
+}
+aside{
+    background-color: #e8c547;
+    float: left;
+    width: 30%;
+    color: white;
+    padding: 20px;
+    hyphens: auto;
+}
+header{
+    background-color: #4d5061;
+}
+footer{
+    background-color: #4d5061;
+    clear: both;
+    color: white;
+    padding: 20px;
+}
+/**
+Scroll-spnap: Para en puntos de anclaje
+Scroll-behavior: El deslizamiento al hacer un scroll
+ */

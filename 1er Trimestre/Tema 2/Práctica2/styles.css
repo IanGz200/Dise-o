@@ -18,6 +18,10 @@ body{
     flex-direction: column;
 
 }
+.principal{
+    display: flex;
+
+}
 main{
     background-color: white;
     padding: 15px;
@@ -37,5 +41,4 @@ aside{
     flex-direction: column;
     justify-content: space-between;
     width: 30%;
-    align-self: end;
 }

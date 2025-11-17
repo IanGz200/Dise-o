@@ -1,0 +1,41 @@
+:root {
+    --fondo_aside: #537dca;
+    --fondo_ADs: #4264a2;
+    --fondo_footer: rgba(255, 255, 255, 0.2);
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./Imagenes/fondo.jpg');
+    background-attachment: fixed;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+
+}
+main{
+    background-color: white;
+    padding: 15px;
+    width: 70%;
+    align-self: start;
+}
+main img{
+    width: 100%;
+    margin-bottom: 15px;
+}
+main h2{
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    align-self: end;
+}

@@ -1,4 +1,55 @@
+:root {
+    --color-acerca-de: #dd820d;
+    --color-parrafo-acerca-de: #5a5a5a;
+    --color-azul-texto-boton: #3895EA;
+    --color-subtitulo: #636363;
+    --color-contenedor-fotos: #f2f2f2;
+    --color-bordes-formulario: #cecece;
+    --color-boton-hover: #387bea;
+    --color-fondo-footer: #1e2b38;
+}
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 16px;
+}
+h3{
+    font-size: 34px;
+}
+header .contenedor{
+    width: 100%;
+    min-height: 600px;
+    background-image: url("Images/bg.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contenedor-texto{
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+}
+.menu a:hover{
+    text-decoration: underline;
+}
+.nombre,.categoria{
+    font-size: 14px;
 }

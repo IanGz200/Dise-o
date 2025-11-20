@@ -76,6 +76,8 @@ header .contenedor{
     transform: translateY(-60.5px) rotate(0.6deg);
 }
 .foto img{
+    width: 115px;
+    height: 115px;
     border-radius: 100px;
 }
 .descripcion p{

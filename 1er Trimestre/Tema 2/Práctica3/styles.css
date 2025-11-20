@@ -32,7 +32,6 @@ header .contenedor{
     background-image: url("Images/bg.jpg");
     background-position: center;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -40,16 +39,43 @@ header .contenedor{
     position: absolute;
     top: 0;
     right: 0;
-}
-.contenedor-texto{
+    margin:40px 15%;
 }
 .menu a{
     text-decoration: none;
     color: white;
+    margin-right: 30px;
 }
 .menu a:hover{
     text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 2px;
 }
-.nombre,.categoria{
+.contenedor-texto{
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px 50px;
+}
+.contenedor-texto .nombre{
+    font-weight: lighter;
+}
+.contenedor-texto .profesion{
+    font-weight: normal;
+}
+.acerca-de{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.foto{
+    transform: translateY(-60.5px) rotate(0.6deg);
+
+}
+.foto img{
+    border-radius: 100px;
+}
+.descripcion p{
     font-size: 14px;
 }

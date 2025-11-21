@@ -73,13 +73,122 @@ header .contenedor{
     text-align: center;
 }
 .foto{
-    transform: translateY(-60.5px) rotate(0.6deg);
+    display: flex;
+    justify-content: center;
+    transform: translateY(-60.5px);
 }
 .foto img{
     width: 115px;
     height: 115px;
     border-radius: 100px;
+    border: 4px solid rgba(255,255,255,0.2);
+    transform: rotate(0.6deg);
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.texto .titulo{
+    color: var(--color-acerca-de);
+    font-weight: normal;
+    margin: -20px 0px 25px;
+}
+.texto p,.trabajos .titulo, .descripcion .categoria{
+    color: var(--color-parrafo-acerca-de);
+    font-weight: normal;
+}
+.texto p{
+    width: 65%;
+    margin-bottom: 50px;
 }
 .descripcion p{
     font-size: 14px;
+}
+span{
+    color: var(--color-azul-texto-boton);
+    text-decoration: underline;
+}
+.trabajos{
+    text-align: center;
+    background-color: var(--color-contenedor-fotos);
+    padding: 40px 0 80px;
+}
+.trabajos .titulo{
+    margin-bottom: 40px;
+}
+.contenedor-trabajos{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 2.66%;
+}
+.trabajo{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.trabajo img{
+    width: 100%;
+}
+.descripcion .nombre{
+    color: var(--color-azul-texto-boton);
+}
+.redes-sociales{
+    background-color: var(--color-fondo-footer);
+}
+footer .contacto{
+    width: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+footer .contacto .titulo{
+    color: var(--color-azul-texto-boton);
+    font-weight: normal;
+    margin: 30px;
+}
+.contacto form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contacto textarea, .contacto input{
+    border: 1px solid var(--color-bordes-formulario);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.formulario input:nth-child(1){
+    margin-right: 2%;
+}
+.formulario input{
+    width: 49%;
+}
+.contacto textarea{
+    width: 100%;
+}
+form .boton{
+    width: auto;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 10px 30px;
+    background-color: var(--color-azul-texto-boton);
+    margin-bottom: 50px;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: center;
+}
+svg{
+    width: 20px;
+    height: 20px;
+    margin: 40px 10vh;
+    fill: white;
 }

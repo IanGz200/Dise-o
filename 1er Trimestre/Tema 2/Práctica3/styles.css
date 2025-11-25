@@ -30,13 +30,13 @@ header .contenedor{
     width: 100%;
     min-height: 600px;
     background-image: url("Images/bg.jpg");
-    background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .menu{
+    display: inline-block;
     position: absolute;
     top: 0;
     right: 0;
@@ -73,7 +73,7 @@ header .contenedor{
 .foto{
     display: flex;
     justify-content: center;
-    transform: translateY(-60.5px);
+    margin-top: -60.5px;
 }
 .foto img{
     width: 115px;
@@ -90,7 +90,7 @@ header .contenedor{
 .texto .titulo{
     color: var(--color-acerca-de);
     font-weight: normal;
-    margin: -20px 0 25px;
+    margin: 25px 0;
 }
 .texto p,.trabajos .titulo, .descripcion .categoria{
     color: var(--color-parrafo-acerca-de);
@@ -103,7 +103,7 @@ header .contenedor{
 .descripcion p{
     font-size: 14px;
 }
-span{
+.bold{
     color: var(--color-azul-texto-boton);
     text-decoration: underline;
 }
@@ -235,7 +235,6 @@ svg{
     }
     .menu a:last-child {
         margin-right: 0;
-
     }
     .trabajo{
         width: 48%;

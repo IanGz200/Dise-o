@@ -90,7 +90,7 @@ header .contenedor{
 .texto .titulo{
     color: var(--color-acerca-de);
     font-weight: normal;
-    margin: -20px 0px 25px;
+    margin: -20px 0 25px;
 }
 .texto p,.trabajos .titulo, .descripcion .categoria{
     color: var(--color-parrafo-acerca-de);

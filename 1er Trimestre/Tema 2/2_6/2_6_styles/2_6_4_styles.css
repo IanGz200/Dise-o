@@ -5,3 +5,45 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+.celda{
+    color: white;
+    background-color: #697C88;
+    padding: 15px;
+}
+.lista{
+    background-color: #cdc6da;
+    padding: 15px;
+}
+.lista1{grid-area: lista1;}
+.lista2{grid-area: lista2;}
+.lista3{grid-area: lista3;}
+.lista4{grid-area: lista4;}
+.lista5{grid-area: lista5;}
+.celda1{grid-area: celda1;}
+.celda2{grid-area: celda2;}
+.celda3{grid-area: celda3;}
+.celda4{grid-area: celda4;}
+.celda5{grid-area: celda5;}
+.contenedor{
+    width: 40%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template:
+            'celda1 celda2'
+            'celda3 celda4'
+            'celda5 celda4';
+    text-align: center;
+    gap: 1px;
+    margin: 0 auto;
+}
+.contenedor-listas{
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template:
+            'lista1 lista1'
+            'lista2 lista3'
+            'lista4 lista5';
+    gap: 1px;
+    background-color: white;
+}

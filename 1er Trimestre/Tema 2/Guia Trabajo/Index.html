@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guia de estilos BTD</title>
+        <link rel="stylesheet" href="./CSS/index_styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lunasima:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>Guia de estilos BTD</h1>
+            <nav>
+                <ul>
+                    <li><a href="#info">Información</a></li>
+                    <li><a href="#logo">Logo</a></li>
+                    <li><a href="#colores">Colores</a></li>
+                    <li><a href="#tipografia">Tipografía</a></li>
+                    <li><a href="#imgs">Imágenes e Iconografía</a></li>
+                    <li><a href="#media">Multimedia e Interactivos</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="info" id="info">
+                <h2>Información sobre la marca</h2>
+                <p>
+                    Somos una compañía de videojuegos pequeña localizada en Galicia, España. Llevamos poco tiempo con el
+                    desarrollo de nuestro último y único juego Break the Dungeon. Un juego de acción rogelite donde
+                    desciendes por una mazmorra descubriendo sus secretos y enfrentándote a enemigos.
+                </p>
+                <p>
+                    La marca gira en torno a los videojuegos con referencias a contenidos retro para hacer homenaje a los
+                    que vinieron antes nuestra pavimentando el camino para que desarrollar videojuegos sea la industria
+                    masiva que es hoy en día. Tenemos un enfoque en la jugabilidad antigua de "pay to play" sin ningún
+                    tipo de restricción en las actualizaciones futuras, si compras algo lo adquieres para siempre.
+                </p>
+            </div>
+            <div class="logo" id="logo">
+                <h2>Información sobre el logo</h2>
+                <p>64x64</p>
+                <img src="img/Sprite-BTD-64x64.png" alt="logo 64x64">
+                <p>128x128</p>
+                <img src="img/Sprite-BTD-128x128.png" alt="logo 128x128">
+                <p>256x256</p>
+                <img src="img/Sprite-BTD-256x256.png" alt="logo 256x256">
+                <p>
+                    El logo principal está en 64x64 píxeles, pero al tener el archivo base y estar hecho con aseprite
+                    este se puede reescalar al tamaño necesario. Los usados en la página son en 64, 128 y 256 píxeles^2
+                </p>
+            </div>
+            <div class="colores" id="colores">
+                <h2>Colores</h2>
+                <p>
+                    La filosofía del color de BTD se basa en colores oscuros para no molestar a la vista y con letra
+                    mayormente blanca, esto adaptándose al fondo.
+                </p>
+                <p>
+                    La mayoría del público objetivo usa el modo oscuro cuando este está disponible, por lo cual el estilo
+                    debe evocar dicho modo.
+                </p>
+                <div class="color verde"></div>
+                <p>
+                    El color principal es el #003333, es un verde azulado que transmite seguridad, sinceridad y
+                    representa las placas base antiguas.
+                </p>
+                <div class="color rojo"></div>
+                <p>
+                    #330000 Se usa para crear contraste y llamar la atención sobre ciertos elementos o CTAs
+                </p>
+                <p>
+                    La letra será negra o blanca dependiendo del contraste necesario. En caso de usar letra dentro de
+                    elementos input se le aplicará una transparencia del 0.7 u opacidad del 0.3 para hacer denotar que
+                    es un placeholder mientras no se introducen los datos.
+                </p>
+                <p>
+                    El color del footer siempre será negro con letra blanca para distinguirlo del resto de la página.
+                </p>
+            </div>
+            <div class="tipografia" id="tipografia">
+                <h2>Tipografía</h2>
+                <p>
+                    La tipografía por defecto será Lunasima, una letra tipo sans-serif que favorece la lectura.
+                </p>
+                <p>El tamaño de la letra en textos será de 16px en dispositivos con un ancho inferior a 500px y 30px
+                    por defecto.</p>
+                <h1>Lorem ipsum.</h1>
+                <p>En elementos h1 será de 40px.</p>
+                <h2>Lorem ipsum.</h2>
+                <p>En elementos h2 será de 38px.</p>
+                <h3>Lorem ipsum.</h3>
+                <p>En elementos h3 será de 35px.</p>
+                <input type="button" value="Enviar">
+                <p>En los botones la letra tendrá un tamaño de 20px en dispositivos con un ancho inferior a 500px y 30px
+                por defecto</p>
+                <p>
+                    En el footer se usará letra de 20px o 10px en caso de dispositivos con un ancho inferior a 500px
+                </p>
+            </div>
+            <div class="imgs" id="imgs">
+                <h1>Imágenes e iconografía</h1>
+                <p>
+                    Las imágenes están creadas por el equipo de arte y el tamaño tiene que ser responsive a la web.
+                </p>
+                <p>
+                    Las imágenes a pantalla completa tienen que ocupar un 100% de ancho de la pantalla y estar centradas.
+                </p>
+                <img src="img/Sprite-Dungeon-1920x1080.png" alt="">
+                <p>
+                    Las imágenes decorativas tendrán un tamaño acorde a la importancia de estas.
+                </p>
+                <p>
+                    La iconografía utilizada son elementos svg de las redes sociales usadas por la empresa, estos iconos
+                    tienen un formato de 32x32 y serán de color blanco sin relleno.
+                </p>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103l0-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"/></svg>
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                <p>Todos los bordes tendrán un radio de 20px para hacerlos más redondeados y cómodos a la vista</p>
+            </div>
+            <div class="media" id="media">
+                <h1>Elementos multimedia e interactivos</h1>
+                <p>
+                    Los elementos del nav serán de color blanco y al pasar por encima con el ratón se subrayarán.
+                </p>
+                <a href="">Elemento nav</a>
+                <p>
+                    Los botones aumentarán de tamaño 1.2 al posicionar el raton sobre ellos, serán de color #330000 con
+                    letra blanca.
+                </p>
+                <p>
+                    Los elementos input contiene texto en gris claro con una pequeña frase del tipo de dato
+                    requerido, tendrán un fondo blanco y sombra interior superior e inferior exterior.
+                </p>
+                <input type="text" placeholder="Ingresa el tipo de dato">
+            </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#info">Información</a></li>
+                    <li><a href="#logo">Logo</a></li>
+                    <li><a href="#colores">Colores</a></li>
+                    <li><a href="#tipografia">Tipografía</a></li>
+                    <li><a href="#imgs">Imágenes e Iconografía</a></li>
+                    <li><a href="#media">Multimedia e Interactivos</a></li>
+                </ul>
+            </nav>
+            <img src="img/Sprite-BTD-256x256.png" alt="logo 256x256">
+            <div class="socials">
+                <p>Redes sociales</p>
+                <a class="twitter" href="https://www.twitter.com/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.4 151.7c.3 4.5 .3 9.1 .3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103l0-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53 51.7 63.7 129.3 105.3 216.4 109.8-1.6-7.8-2.6-15.9-2.6-24 0-57.8 46.8-104.9 104.9-104.9 30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3z"/></svg></a>
+                <a class="facebook" href="https://www.facebook.com/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M80 299.3l0 212.7 116 0 0-212.7 86.5 0 18-97.8-104.5 0 0-34.6c0-51.7 20.3-71.5 72.7-71.5 16.3 0 29.4 .4 37 1.2l0-88.7C291.4 4 256.4 0 236.2 0 129.3 0 80 50.5 80 159.4l0 42.1-66 0 0 97.8 66 0z"/></svg></a>
+                <a class="instagram" href="https://www.instagram.com/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.3 141a115 115 0 1 0 -.6 230 115 115 0 1 0 .6-230zm-.6 40.4a74.6 74.6 0 1 1 .6 149.2 74.6 74.6 0 1 1 -.6-149.2zm93.4-45.1a26.8 26.8 0 1 1 53.6 0 26.8 26.8 0 1 1 -53.6 0zm129.7 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM399 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            </div>
+            <img class="logo-mini" src="img/Sprite-BTD-64x64.png" alt="logo 256x256">
+        </footer>
+    </body>
+</html>

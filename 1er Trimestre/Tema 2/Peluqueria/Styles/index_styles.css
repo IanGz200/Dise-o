@@ -1,0 +1,239 @@
+:root {
+    --color-letra: #333;
+    --color-fondo: #fff;
+    --color-rosa: #e91e63;
+}
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Montserrat', arial, sans-serif;
+    scroll-behavior: smooth;
+    hyphens: auto;
+}
+body{
+    background: var(--color-fondo);
+    color: var(--color-letra);
+}
+header {
+    background: rgba(255,255,255,0.95);
+    border-bottom:2px solid black;
+    padding: 30px;
+    text-align: center;
+}
+header h1 {
+    font-weight: bold;
+    color: black;
+}
+nav {
+    background: var(--color-rosa);
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li {
+    padding: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: black;
+}
+main {
+    width: 90vw;
+    margin: 0 auto;
+}
+main div{
+    padding: 15px;
+}
+main div > p{
+    margin: 15px 0;
+}
+main .fs-img{
+    width: 100%;
+    margin: 20px 0;
+}
+main > *{
+    box-shadow: 1px 1px 3px  rgba(0,0,0,0.1);
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.st-reservas{
+    grid-area: st-reservas;
+    color: var(--color-rosa);
+}
+main .reservas .p-reservas{
+    grid-area: p-reservas;
+    line-height: 1.6;
+}
+.imagen-reservas{grid-area: imagen-reservas;}
+.f-reservas{grid-area: f-reservas;}
+main .reservas {
+    display:grid;
+    grid-template-areas:
+            "st-reservas st-reservas"
+            "p-reservas p-reservas"
+            "imagen-reservas f-reservas";
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+}
+main .reservas img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+main .reservas form{
+    width: 100%;
+    display: grid;
+    padding: 15px;
+    background-color: rgba(240,240,240, 0.95);
+    border-radius: 8px;
+    text-align: center;
+    grid-template-rows: min-content min-content min-content min-content 1fr min-content;
+}
+main .reservas form > *{
+    margin: 5px 0;
+}
+main .reservas form input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+main .reservas form textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    resize: vertical;
+}
+main .reservas form .enviar{
+    width: 100%;
+    background-color: var(--color-rosa);
+    color: white;
+    font-weight: bold;
+}
+main .reservas form .enviar:hover{
+    background-color: #d81b60;
+}
+main .servicios table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+}
+main .servicios table tr td, main .servicios table tr th{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid lightgray;
+}
+main .servicios table thead tr{
+    background-color: var(--color-rosa);
+    color: var(--color-fondo);
+}
+main .servicios table tbody tr td:last-child::after{
+    content: " €";
+}
+main .servicios table tbody tr:nth-child(even){
+    background-color: rgba(240,240,240, 0.95);
+}
+.parallax-img{
+    background-image: url('https://cdn.pixabay.com/photo/2021/11/15/12/06/barber-shop-6797941_1280.jpg');
+    min-height: 300px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main div h2, main div h3{
+    color: var(--color-rosa);
+}
+main .galeria .fotos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+}
+main .galeria .fotos > *{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: -1px 1px 3px rgba(0,0,0,0.1);
+}
+main .galeria .fotos .hipster{
+    background-image: url("https://img.freepik.com/foto-gratis/joven-hermosa-mujer-hipster-sonriente-pantalones-vaqueros-verano-moda-peinado-rosa-sexy-modelo-despreocupado-posando-calle-modelo-positivo-al-aire-libre-alegre-feliz_158538-20107.jpg?t=st=1745405839~exp=1745409439~hmac=5ffc0c94e96b89fc79cfc3e820a35a9ac8223618a83d3f96d3a5da497127ae92&w=1380");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .galeria .fotos > *:hover{
+    scale: 1.05;
+}
+main .mapa iframe{
+    width: 100%;
+    min-height: 400px;
+    border: none;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+main .ventajas{
+    float: left;
+    text-align: center;
+}
+main .ventajas .card-ventaja{
+    float: left;
+    text-align: start;
+    width: 29%;
+    background-color: #ffe5e8;
+    min-height: 260px;
+    margin: 2%;
+    border-radius: 8px;
+    border: 1px solid #fdc0ca;
+}
+footer{
+    clear: both;
+    background-color: rgba(0,0,0, 0.85);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-top: 2px solid var(--color-rosa);
+}
+footer svg{
+    width: 32px;
+    height: 32px;
+    fill: var(--color-rosa);
+    margin: 10px;
+}
+
+@media screen and (max-width: 768px){
+
+    main .reservas {
+        grid-template-areas:
+            "st-reservas"
+            "p-reservas "
+            "imagen-reservas "
+            "f-reservas";
+        grid-template-columns: 1fr;
+    }
+    main .reservas form{
+        margin-top: 20px;
+    }
+    main .galeria .fotos{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+
+    main .galeria .fotos *:nth-child(n+5){
+        display: none;
+    }
+
+
+}

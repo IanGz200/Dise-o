@@ -1,0 +1,35 @@
+:root{
+    --primary-blue: #074167; /* Azul */
+    --dark-blue: #143548; /* Azul oscuro */
+    --background-light: #ffebd9; /* Crema */
+    --hover-light: #CCB299; /* Marrón */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    font-family: "Montserrat", Arial, sans-serif;
+    color: var(--background-light);
+}
+.menu a:hover, footer a:hover{
+    color: var(--hover-light);
+}
+svg{
+    width: 32px;
+    height: 32px;
+    fill: white;
+}
+.icon-facebook svg:hover{
+    fill: #1877f2;
+}
+.icon-twitter svg:hover{
+    fill: #1DA1F2;
+}
+.icon-instagram svg:hover{
+    fill: #D43089;
+}
+.icon-linkedin svg:hover{
+    fill: #0B66C3;
+}

@@ -31,6 +31,7 @@ nav {
     background: var(--color-rosa);
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 nav ul {
     display: flex;
@@ -235,5 +236,9 @@ footer svg{
         display: none;
     }
 
+    main .ventajas .card-ventaja{
+        float: none;
+        width: 100%;
+    }
 
 }

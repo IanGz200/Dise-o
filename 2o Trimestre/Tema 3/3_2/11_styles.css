@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    margin: 10px;
+}
+div{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.balanceo{
+    animation: balanceo 1s infinite;
+    background-color: grey;
+}
+.click{
+    background-color: black;
+    animation: click 1s infinite;
+}
+.chicle{
+    animation: chicle 1s infinite;
+    background-color: green;
+}
+.fadein{
+    animation: fadein 10s infinite;
+    background-color: red;
+}
+.flash{
+    animation: flash 1s infinite;
+    background-color: blue;
+}
+.vaiven{
+    animation: vaiven 1s infinite;
+    background-color: yellow;
+    color: black;
+    vertical-align: center;
+}
+@keyframes balanceo{
+    20%{
+        transform: scale(0.7) rotate(-6deg);
+    }
+    30%,70%{
+        transform: scale(1.1) rotate(6deg);
+    }
+    50%,90%{
+        transform: scale(1.1) rotate(-6deg);
+    }
+}
+@keyframes click{
+    25%,75%{
+        transform: scale(0.8);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+@keyframes chicle{
+    30%{
+        transform: scaleX(1.25) scaleY(0.75);
+    }
+    50%{
+        transform: scaleX(0.75) scaleY(1.25);
+    }
+    60%{
+        transform: scaleX(1.25) scaleY(0.85);
+    }
+}
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.8;
+    }
+}
+@keyframes flash{
+    25%,75%{opacity: 0}
+    50%{opacity: 1}
+}
+@keyframes vaiven{
+    15%{
+        transform: rotate(-10deg) translateX(-25%);
+    }
+    30%{
+        transform: rotate(5deg) translateX(20%);
+    }
+    45%{
+        transform: rotate(-3deg) translateX(-10%);
+    }
+    60%{
+        transform: rotate(2deg) translateX(0%);
+    }
+    75%{
+        transform: rotate(-1deg) translateX(-3%);
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <style>
+        .square {
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            margin: 5px;
+        }
+        .square:hover {
+            animation: rectify 1s forwards;
+        }
+        @keyframes rectify {
+            to{
+                transform: scaleX(2);
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="square">
+
+    </div>
+    <div class="square">
+
+    </div>
+</body>
+</html>
